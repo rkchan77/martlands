@@ -272,9 +272,11 @@ var json = [
     for(var i=0; i<json.length; i++){
         if(json[i].email == email){
             document.getElementsByClassName("checkincard").style.backgroundColor = "green";
+            document.getElementsByClassName("message").innerHTML = "Paid";
             break;
         } else {
             document.getElementsByClassName("checkincard").style.backgroundColor = "red";
+            document.getElementsByClassName("message").innerHTML = "Not Paid: Contact the HOH or Prefects to submite payment";
         }
     }
   }

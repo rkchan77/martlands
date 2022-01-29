@@ -262,13 +262,19 @@ var json = [
     var name = profile.getName();
     var image = profile.getImageUrl();
     var email = profile.getEmail();
+    var d = new Date();
+
+    document.getElementById("signinimage").src = image;
+    document.getElementsByClassName("name").innerHTML = name;
+    document.getElementById("time").innerHTML = d;
+
 
     for(var i=0; i<json.length; i++){
         if(json[i].email == email){
-            document.body.style.backgroundColor = "green";
+            document.getElementsByClassName("checkincard").style.backgroundColor = "green";
             break;
         } else {
-            document.body.style.backgroundColor = "red";
+            document.getElementsByClassName("checkincard").style.backgroundColor = "red";
         }
     }
   }

@@ -1,10 +1,13 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="google-signin-client_id" content="1052068884376-ltn9rh1efbf1icq0jmddl1jkjm5r7b0c.apps.googleusercontent.com">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="./assets/logopurple.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="script.js"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script> 
@@ -24,13 +27,38 @@
                 <li><a href="snack.html">Snack</a></li>
                 <li><a href="https://meet.google.com/xkg-afeh-rsu" target="_blank">House Meeting</a></li>
                 <li><a href="https://www.instagram.com/martlandshouse/" target="_blank"><i class="fa fa-instagram" style="color: white; font-size: 36px; margin-top: -5px;"></i></a></li>
-                <li><a><i class="fa fa-sign-in" style="color: white; font-size: 36px; margin-left: -40px; margin-top: -5px;"></i></a></li>
-                <li><a class="g-signin2" data-onsuccess="onSignIn" style="width: 36px; height: 36px; margin-top: -5px; margin-left: -40px; opacity: 0;"></a></li>
+                <li><a id="in"><i class="fa fa-sign-in" style="color: white; font-size: 36px; margin-left: -40px; margin-top: -5px;"></i></a></li>
+                <li><a id="in" class="g-signin2" data-onsuccess="onSignIn" style="width: 36px; height: 36px; margin-top: -5px; margin-left: -115px; opacity: 0;"></a></li>
+                <li><a id="out" href ="#" onclick="signOut();"><i class="fa fa-sign-out" style="color: white; font-size: 36px; margin-left: -40px; margin-top: -5px; display: visible;"></i></a></li>
              </div>
             </ul>
           </nav>
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
-
+          
+        <img src="./assets/banner.png" style="width: 102%; height: auto; opacity: 0.8; left: -10; position: relative;">
+        
+        <h1 style="margin:50px; margin-top: 50px;">Upcoming Events</h1>
+        <h1 style="margin:50px; margin-top: -65px; color: #c4c4c4">_______________________________</h1>
+        
+        <center>
+            <div id="update" style="width: 60%; height: auto; margin-top: 10px; border-radius: 10px; border: 3px solid #6F5794;">
+                <h3 style="font-size: 24px;">House Hockey 🏒</h3>
+                <h6 style="font-size: 16px; margin-top: -5px;">Date: TBD</h6>
+                <p style="padding: 10px; margin-top: -20px">Email lewis.lapham@ucc.on.ca for more information</p>
+            </div>
+            <br>
+            <div id="update" style="width: 60%; height: auto; margin-top: 10px; border-radius: 10px; border: 3px solid #6F5794;">
+                <h3 style="font-size: 24px;">House Volleyball 🏐</h3>
+                <h6 style="font-size: 16px; margin-top: -5px;">Date: TBD</h6>
+                <p style="padding: 10px; margin-top: -20px">Email lewis.lapham@ucc.on.ca for more information</p>
+            </div>
+            <br>
+            <div id="update" style="width: 60%; height: auto; margin-top: 10px; border-radius: 10px; border: 3px solid #6F5794;">
+                <h3 style="font-size: 24px;">House Math 🧮</h3>
+                <h6 style="font-size: 16px; margin-top: -5px;">Date: Jan 17</h6>
+                <p style="padding: 10px; margin-top: -20px">Join us at lunch to cheer on the house math team</p>
+            </div>
+        </center>
+       
         <div class="footer">
             <div class="row" style="margin-left: 20%;">
                 <div class="column1">

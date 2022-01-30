@@ -265,20 +265,24 @@ var json = [
     var d = new Date();
 
     document.getElementById("signinimage").src = image;
-    document.getElementsByClassName("name").innerHTML = name;
+    document.getElementById("name").innerHTML = name;
     document.getElementById("time").innerHTML = d;
 
 
     for(var i=0; i<json.length; i++){
         if(json[i].email == email){
-            document.getElementsByClassName("checkincard").style.backgroundColor = "green";
-            document.getElementsByClassName("message").innerHTML = "Paid";
+            document.getElementById("checkin").src = "./assets/check.png";
+            document.getElementById("message").innerHTML = "Paid";
+            document.getElementById("pay").innerHTML = "Show to HOH or Prefects to collect house snack";
             break;
         } else {
-            document.getElementsByClassName("checkincard").style.backgroundColor = "red";
-            document.getElementsByClassName("message").innerHTML = "Not Paid: Contact the HOH or Prefects to submite payment";
+            document.getElementById("checkin").src = "./assets/x.png";
+            document.getElementById("message").innerHTML = "Not Paid";
+            document.getElementById("pay").innerHTML = "Show to HOH or Prefects to collect house snack";
         }
     }
+      
+    alert("You are now signed in");
   }
 
   function signOut() {
@@ -286,4 +290,5 @@ var json = [
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
+    alert("You have been signed out");
   }

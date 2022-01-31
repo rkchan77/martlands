@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="script.js"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script> 
+        <title>House Snack</title>
     </head>
 
     <body>
@@ -32,6 +33,34 @@
                 <li><a id="out" href ="#" onclick="signOut();"><i class="fa fa-sign-out" style="color: white; font-size: 36px; margin-left: -40px; margin-top: -5px; display: visible;"></i></a></li>
              </div>
             </ul>
+          </nav>
+          
+        <nav id="navbar1">
+             <ul>
+                  <a href="index.html" class="logo">
+                        <img src="./assets/logowhite.png" style="width: 60px; height: 60px; margin-top: 6px; margin-left: 20px; display: initial; ">
+                      </a>
+                  <a href="index.html" class="logo"><h2 id="item" style="color:#fff; margin-left: 20px; margin-top: 19px; font-size: 26px;">Martland's House</h2></a>
+
+                  <input type="checkbox" id="active" style="display: none;">
+                  <label for="active" class="menu-btn" ><i class="fa fa-bars" style="margin-top: 8px;"></i></label>
+                  
+                   <div class="wrapper" style="top:-0.8% ">
+                     <ul>
+                          <li class="list"><a href="index.html">Home</a></li>
+                          <li class="list"><a href="gallery.html">Gallery</a></li>
+                          <li class="list"><a href="snack.html">Snack</a></li>
+                          <li class="list"><a href="https://meet.google.com/xkg-afeh-rsu" target="_blank">House Meeting</a></li>
+                          <li class="list" style="text-align: center; justify-content: center; align-content: center;"><p style="margin-left: 10px; margin-top: -30px; color: #c4c4c4">_________________________________</p></li>
+                          <div style="margin-top: -50px; margin-left: 25px;">
+                              <li><a href="https://www.instagram.com/martlandshouse/" target="_blank"><i class="fa fa-instagram" style="color: white; font-size: 40px;"></i></a></li>
+                              <li><a id="in"><i class="fa fa-sign-in" style="color: white; font-size: 40px; "></i></a></li>
+                              <li><a id="in" class="g-signin2" data-onsuccess="onSignIn" style="width: 40px; height: 40px; margin-left: -115px; opacity: 0;"></a></li>
+                              <li><a id="out" href ="#" onclick="signOut();"><i class="fa fa-sign-out" style="color: white; font-size: 40px;"></i></a></li>
+                          </div>
+                     </ul>
+                  </div>
+             </ul>
           </nav>
         
         <h1 style="margin:50px; margin-top: 130px;">House Snack Check-In</h1>

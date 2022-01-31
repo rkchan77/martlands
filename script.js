@@ -282,7 +282,6 @@ var json = [
         }
     }
       
-    alert("You are now signed in");
   }
 
   function signOut() {
